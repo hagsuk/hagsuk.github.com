@@ -331,7 +331,7 @@ input{display:none;}
 
 div.hags h2{background: #fff;line-height: 2em;padding-left: 3em;}
 
-div.feelings{float:left;width: 300px;}
+div.feelings{float:left;width: 300px;margin-top: 30px; margin-left: 10px;}
 div.tips{clear:both; float:left; width: 300px;margin-left: 20px;}
 div.hags{float: left; width: 500px; border: 1px solid #fff;}
 
