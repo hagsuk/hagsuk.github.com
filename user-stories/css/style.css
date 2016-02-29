@@ -7,6 +7,8 @@
 #results li strong{margin-right: 10px; width: 60px; height: 40px; display:block; float:left; clear:both;}
 li.Customer {background-color: #fdf2a5!important;}
 li.Distributor {background-color: #e1ecb2!important;}
+li.Architect{background-color: #fbcba7!important;}
+li.Inexperienced{background-color: #cee6fd!important;}
 #results li p.big{min-height: 40px;}
 #results li p.tiny{font-size: 0.6em; position: relative; left: 320px; top: -10px;}
 #results li p.asa{height: 30px;}
