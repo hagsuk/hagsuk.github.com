@@ -12,15 +12,21 @@ $.ajax({
   
   // response.feed.entry is where the actual rows are, and this is an array of each row, grouped by the first row.  I don't know how google knows to do it like this, it just does.
   var data = response.feed.entry;
+  
+// in case we need to number items based on their row number
   var number = 1;
   
   // loop through the data array
   data.forEach(function( row ) {
+
     // the data comes in the format where $t is the actual piece of data which is a property of the first row's name...
     number = number + 1;
     
-    $('#results').append( '<li class="story ' + row.gsx$asa.$t + '"><p class="tiny">' + row.gsx$timestamp.$t + '</p><p class="big asa"><strong>As a: </strong>' + row.gsx$asa.$t + '</p><p class="big ineed"><strong>I need: </strong>' + row.gsx$userneed.$t + '</p><p class="big sothat"><strong>So that: </strong>' + row.gsx$sothat.$t + '</p></li>');
-    
+    // Call all fields from each row into a list item
+    $('#results').append( '<li class="story' + row.gsx$asa.$t + '"><p class="tiny">' + row.gsx$timestamp.$t + '</p><p class="big asa"><strong>As a: </strong>' + row.gsx$asa.$t + '</p><p class="big ineed"><strong>I need: </strong>' + row.gsx$userneed.$t + '</p><p class="big sothat"><strong>So that: </strong>' + row.gsx$sothat.$t + '</p></li>');
+     
+// Re-order based on logic to group stories by audience type
+     $('.Distributor').prependTo('#results');  $('.Architect').prependTo('#results');  $('.Customer').prependTo('#results');    $('.Inexperienced').prependTo('#results');
   });
     
 });
