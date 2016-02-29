@@ -1,0 +1,361 @@
+.header{height: 60px; width: 100%; background: #fdf2a5; margin-bottom: -20px; text-align:center; padding-top: 15px;}
+.header a{text-decoration: none; font-size: 1.5em; color: #000; font-weight: bold; background: #ccc; padding: 5px 10px; border-radius: 15px;}
+.header a:hover{background: #999;}
+
+#results li{list-style-type:none; float:left; height: 220px; width: 440px; border: 1px solid #000; background: #fff; padding: 1em;margin: 1em; }
+
+#results li strong{margin-right: 10px; width: 60px; height: 40px; display:block; float:left; clear:both;}
+li.Customer {background-color: #fdf2a5!important;}
+li.Distributor {background-color: #e1ecb2!important;}
+#results li p.big{height: 40px;}
+#results li p.tiny{font-size: 0.6em; position: relative; left: 320px; top: -10px;}
+#results li p.asa{height: 30px;}
+
+h1{font-size: 2em;}
+
+.homepage{
+  position: relative;
+  width: 100%;
+ clear:both;
+}
+
+.items ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.edu li {
+  counter-increment: step-counter;
+  margin-bottom: 10px;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.edu li::before {
+  content: counter(step-counter);
+   margin-right: 15px;
+  font-size: 120%;
+  background-color: rgb(0,200,100);
+  color: white;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 12px;
+}
+
+.lists p::before {
+  content: "-";
+  margin-right: 15px;
+  font-size: 80%;
+  background-color: rgb(0,100,100);
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 8px;
+}
+
+.promo li {
+  counter-increment: step-counter;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.promo li::before {
+  content: "5";
+  margin-right: 15px;
+  font-size: 120%;
+  background-color: rgb(0,100,200);
+  color: white;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 12px;
+}
+
+
+.items{
+  background: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 .2em 0.5em #111;
+  width: 420px;
+  float:left;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.homepage .slide1, .homepage .slide2, .newsletters .slide1, .newsletters .slide2{
+  background: #fff;
+   border-radius: 20px;
+  box-shadow: 0 .2em 0.5em #111;
+  padding-top: 10px;
+  float:left;
+}
+
+.homepage ol li{float: left; margin-left: 5px; margin-bottom: 5px; text-align: center;  list-style-position: inside; }
+.newsletters ol li{text-align: center;  list-style-position: inside; }
+
+.homepage ol{float:left; width: 450px;}
+.newsletters ol{float:left;}
+.newsletters ol li{border: 1px solid #000;}
+
+.slide1{
+  position: relative;
+  height: 220px;
+  width: 470px!important;
+ 
+}
+
+ .slide2{
+  position: relative;
+  height: 220px;
+  width: 470px;
+  margin-left: 20px;
+}
+
+.homepage ol li{
+  border: 1px solid #000;
+  float:left;
+  background: url('http://hags-smp.co.uk/resources/uploads/images/schedule-background.jpg');
+
+}
+
+.newsletters ol li{ background: url('http://hags-smp.co.uk/resources/uploads/images/schedule-background.jpg');
+}
+
+
+
+div.website p{font-size: 18px;}
+div.website h4{position: relative; top: 0px;}
+
+.homepage .one{
+  width: 200px;
+  height:205px;
+  
+ }
+
+.homepage .two{
+  width: 205px;
+  height: 100px;
+ }
+
+.homepage .three {
+  width: 100px;
+  height: 100px;
+ }
+
+.homepage .four {
+  width: 100px;
+  height: 100px;
+ }
+
+.homepage .five {
+  width: 400px;
+  height: 205px;
+  border: 1px solid #000;
+ }
+
+.newsletters ol.slide1{height: 600px!important; width: 500px!important;}
+.newsletters ol.slide2{height: 600px!important; width: 350px!important; background: url('http://hags-smp.co.uk/resources/uploads/images/promo-emailer.jpg') no-repeat; background-size:cover; padding-top: 50px;}
+.newsletters div{width: 400px; float: left;}
+
+.newsletters ol li{
+  height: 100px;
+  width: 400px;
+  margin-bottom: 10px;
+  background: url('http://hags-smp.co.uk/resources/uploads/images/newsletter-content.jpg');
+}
+
+.newsletters ol li.five{
+  height: 500px;
+  width: 250px;
+  background: none;
+ }
+
+.newsletters ol.slide1{
+  background: #fff url('http://hags-smp.co.uk/resources/uploads/images/newsletter-bg.jpg') no-repeat;
+  padding-top: 50px;
+  
+}
+
+.newsletters{ float:left;}
+.website{float:left;}
+.social{float:left; width: 100%;}
+div.month{clear:both; height: 100%;}
+
+
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+//mixins
+@mixin bp($bp, $min-max: min-width) {
+    $em: $bp/16;
+    @media(#{$min-max}: #{$em}em) {
+        @content;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  
+    font-weight: normal;
+   
+}
+
+*,
+*:before,
+*:after  { box-sizing: inherit; }
+
+h1 { 
+   font-size: 2em;
+    line-height: 1.2;
+    margin: 0.5em 0 3em;
+}
+
+@include bp(1075) { h1 { font-size: 4em; } }
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-y: visible;
+    overflow-x: hidden;
+    background: #fdf7ce;
+    color: #000;
+    text-align: left;
+}
+
+header {
+    background: #4f9b41;
+    box-shadow: 0 .2em 0.5em #111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 15%;
+}    
+    label {
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        line-height: 4.25em;
+        font-size: .75em;
+        font-weight: bold;
+        padding: 0.2em 2em;
+       
+    }
+
+
+header label:hover {
+    background: #45bd2f;
+}
+
+.slide {
+    height: 100%;
+    width: 85%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding:  1em 1em 0;
+
+    transition: left 0s .75s;        
+    
+    &-one { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/starryFarm.jpg'); }
+
+    &-two { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/campusDarkDays.jpg'); }
+
+    &-three { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/autumn.jpg'); }
+
+    &-four { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/lakehouse.jpg'); }
+    
+    h1 {
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform .5s .5s, opacity .5s;
+    }
+}
+
+[id^="slide"]:checked + .slide {
+    left: 15%;
+    z-index: 100;
+    transition: left .65s ease-out;
+    
+    & h1 {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all .5s .5s;
+    }
+}
+
+input{display:none;}
+.social ol{width: 250px; float: left; margin-left: 10px; list-style-type:none; background: #fff; border-radius: 20px; padding: 10px; box-shadow: 0 .2em 0.5em #111;}
+
+
+.slide h1{
+  font-size: 0.8em;
+}
+
+.slide div.user{ 
+  border: 1px solid #000;
+  width: 300px;
+  padding-bottom: 2em;
+  float:left;
+  margin: 20px;
+}
+
+.slide div.user h2{
+   font-size: 1.4em;
+   background: #000;
+  color: #fff;
+  line-height: 2em;
+  text-align: center;
+}
+
+.slide div.user blockquote, .slide div.hags blockquote{
+  font-style: italic;
+  position: relative;
+  left: 1em;
+  top: 1em;
+  font-size: 1.4em;
+ }
+
+.slide div.user blockquote:before, .slide div.hags blockquote:before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  left: -0.8em;
+  top:-0.4em;
+  
+}
+
+div.hags h2{background: #fff;line-height: 2em;padding-left: 3em;}
+
+div.feelings{float:left;width: 300px;}
+div.tips{clear:both; float:left; width: 300px;margin-left: 20px;}
+div.hags{float: left; width: 500px; border: 1px solid #fff;}
+
+div.feelings ul li{
+  font-size: 2em;
+  color:#4f9b41;
+}
+
+div.tips ul li{
+  font-size: 1em;
+  line-height: 1.4em;
+  padding: 0.6em;
+}
+
