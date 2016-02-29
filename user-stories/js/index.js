@@ -23,7 +23,7 @@ $.ajax({
     number = number + 1;
     
     // Call all fields from each row into a list item
-    $('#results').append( '<li class="story' + row.gsx$asa.$t + '"><p class="tiny">' + row.gsx$timestamp.$t + '</p><p class="big asa"><strong>As a: </strong>' + row.gsx$asa.$t + '</p><p class="big ineed"><strong>I need: </strong>' + row.gsx$userneed.$t + '</p><p class="big sothat"><strong>So that: </strong>' + row.gsx$sothat.$t + '</p></li>');
+    $('#results').append( '<li class="story ' + row.gsx$asa.$t + '"><p class="tiny">' + row.gsx$timestamp.$t + '</p><p class="big asa"><strong>As a: </strong>' + row.gsx$asa.$t + '</p><p class="big ineed"><strong>I need: </strong>' + row.gsx$userneed.$t + '</p><p class="big sothat"><strong>So that: </strong>' + row.gsx$sothat.$t + '</p></li>');
      
 // Re-order based on logic to group stories by audience type
      $('.Distributor').prependTo('#results');  $('.Architect').prependTo('#results');  $('.Customer').prependTo('#results');    $('.Inexperienced').prependTo('#results');
